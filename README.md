@@ -19,6 +19,7 @@ This exists for three reasons:
 | :-- | :-- | :-- |
 | 2026-09 | [Benchmarking X12 parsers, and the bugs it found in our own code](entries/2026-09-benchmarking-x12-parsers.md) | A head-to-head against `node-x12` and `x12-parser` under a 25 MB ceiling. We tied one of them uncapped, found a bug in our own test-data generator, and found a validation gap in our own parser. |
 | 2026-09 | [Word-level lyric alignment when four sources disagree](entries/2026-09-word-level-lyric-alignment.md) | Four lyric sources, one clock. Forced alignment of 95 vocal tracks, content-addressed caches, and an accuracy harness that blocks regressions. |
+| 2026-11 | [KV offload only pays above 4k tokens](entries/2026-11-kv-offload-crossover.md) | A fixed pool served 4 of 200 sequences; tiering served 200. Restoring a prefix beats recomputing it only above roughly 4k tokens. |
 
 ## Queue
 
