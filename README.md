@@ -21,6 +21,7 @@ This exists for three reasons:
 | 2026-09 | [Word-level lyric alignment when four sources disagree](entries/2026-09-word-level-lyric-alignment.md) | Four lyric sources, one clock. Forced alignment of 95 vocal tracks, content-addressed caches, and an accuracy harness that blocks regressions. |
 | 2026-11 | [KV offload only pays above 4k tokens](entries/2026-11-kv-offload-crossover.md) | A fixed pool served 4 of 200 sequences; tiering served 200. Restoring a prefix beats recomputing it only above roughly 4k tokens. |
 | 2026-11 | [Torn WAL frames, a fake 0.000% Bloom filter, and a 29x compaction stall](entries/2026-11-lsm-compaction-and-torn-writes.md) | We built a Rust WAL + LSM storage engine with deterministic simulation testing across 1,000 seeds, caught a benchmark bug that bypassed the Bloom filter, cut point lookups from 7,029 ns to 648 ns, and measured the NVMe compaction tail stall. |
+| 2026-11 | [Head-of-line blocking, a 130 vs 120 double-billing leak, and 4.51 us warm-standby failover](entries/2026-11-websocket-session-mux-and-failover.md) | We built a Rust stateful WebSocket session multiplexer and warm worker pool with 1,000-seed deterministic simulation testing, eliminated a 30.5x bimodal head-of-line stall, fixed a batch-rollback billing leak, and measured 4.51 us standby failover. |
 
 ## Queue
 
